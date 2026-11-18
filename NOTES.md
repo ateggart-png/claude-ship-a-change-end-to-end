@@ -9,10 +9,14 @@ Add `PUT /users/:id` to the users resource, going through `db/store.js` for data
 
 `tests/update-user.test.js` was not edited; it is how the feature is checked.
 
+The plan created by Claude fulfilled the project brief. The only amendment was to ensure that only one logical change was made per commit.
+
 ## Model choice
-Sonnet was chosen because it fits both the planning and the execution of this small, well-scoped change.
+The Sonnet model was chosen because the planning required careful consideration of the project requirements, and the execution was not straightforward.
 
 ## Commit split
+The commits were split by asking Claude to only make one logical change per commit. This is to allow the Reviewer to more easily understand what changed and why.
+
 One logical change per commit, with `npm test` run after each:
 
 1. `cf90be2` Add updateUser helper to the in-memory store
@@ -20,4 +24,4 @@ One logical change per commit, with `npm test` run after each:
 3. Add NOTES.md (this commit)
 
 ## Review
-To be completed after the review.
+The Claude review determined that there are no bugs and that validation was correct for the common cases. The review identified unnecessary brackets in a file which was not changed as it was out of scope.
